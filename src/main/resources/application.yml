@@ -1,0 +1,16 @@
+#spring:
+#  datasource:
+#    driverClassName: com.mysql.jdbc.Driver
+#    url: jdbc:mysql:///mytable1?useUnicode=true&characterEncoding=utf-8
+#    username: root
+#    password: 123
+spring:
+  datasource:
+    username: root
+    password: 123
+    url: jdbc:mysql:///mytable1?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
